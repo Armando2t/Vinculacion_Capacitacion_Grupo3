@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo API REST - Clima</title>
+
+    <!-- Archivo de estilos separado -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <h2>Demo de API REST - Consulta de Clima</h2>
+
+        <p>
+            Esta página consume una API REST de OpenWeather usando JavaScript.
+        </p>
+
+        <input id="ciudad" type="text" placeholder="Ingrese ciudad" value="Quito">
+        <button type="button" onclick="consultarClima()">Consultar clima</button>
+
+        <div id="resultado" class="panel">
+            Ingrese una ciudad y presione el botón.
+        </div>
+
+        <div id="explicacionRest" class="panel-rest oculto">
+            <div class="titulo">Detalle de la llamada REST</div>
+
+            <div class="dato"><b>Método HTTP:</b> <code id="metodoHttp"></code></div>
+            <div class="dato"><b>Endpoint:</b> <code id="endpointApi"></code></div>
+            <div class="dato"><b>URL final:</b> <code id="urlFinal"></code></div>
+            <div class="dato"><b>Estado HTTP:</b> <code id="estadoHttp"></code></div>
+
+            <h4>Parámetros enviados</h4>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Parámetro</th>
+                        <th>Valor</th>
+                        <th>Explicación</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaParametros">
+                </tbody>
+            </table>
+        </div>
+
+        <div id="jsonPanel" class="panel-json oculto">
+            <div class="titulo">Respuesta JSON recibida desde la API</div>
+            <pre id="jsonRespuesta"></pre>
+        </div>
+    </div>
+
+    <!-- Archivo JavaScript separado -->
+    <script src="app.js?v=2"></script>
+
+</body>
+</html>

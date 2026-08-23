@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: #f4f4f4;
+}
+
+.contenedor {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 850px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+input {
+    width: 250px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+button {
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.panel {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #eef5ff;
+    border-radius: 6px;
+}
+
+.panel-rest {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff8e1;
+    border-radius: 6px;
+    border-left: 5px solid #f0b400;
+}
+
+.panel-json {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.titulo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.dato {
+    margin: 6px 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #e6e6e6;
+}
+
+code {
+    background-color: #eee;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Clase para ocultar secciones */
+.oculto {
+    display: none;
+}
